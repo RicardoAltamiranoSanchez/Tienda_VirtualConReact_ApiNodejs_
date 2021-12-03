@@ -21,7 +21,7 @@ return null;
 {Informacion.playeras.map((p) => (
 
 <div class="producto">
-  <Link to={'/'} key={p._id}>
+  <Link to={`/Detalle/${p._id}`} key={p._id}>
   <img src={p.img} alt="Aqui va la imagen"/>
   <div class="producto__informacion">
  <p class="producto__nombre">{p.nombre}</p>

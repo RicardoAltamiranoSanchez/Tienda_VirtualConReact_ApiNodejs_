@@ -7,7 +7,7 @@ import Index from './Paginas/Home';
 import Conocenos from './Paginas/Conocenos';
 import Header from './componentes/header';
 import Footer from './componentes/footer';
-import detalle from './Paginas/Detalle';
+import Detalle from './Paginas/Detalle';
 function App() {
 
   const [bandera,setBandera]=useState(false);
@@ -65,10 +65,21 @@ function App() {
 
  />
 
-<Route    exact path='/Detalle'  component = {  () =>  <detalle/> 
+<Route    exact path='/Detalle/:id'  
+ render={(props) =>{
+  const detalle=informacion.playeras.filter((playera)=>playera._id===props.match.params.id);
+  return(
 
+    <Detalle
+    
+    detalle={detalle[0]}
+    setBandera={setBandera}
+    
+    />
+  )
+}}
 
-  }
+  
 />
 
     </Switch>
