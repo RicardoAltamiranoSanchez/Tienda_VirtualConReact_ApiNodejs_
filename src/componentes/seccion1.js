@@ -10,7 +10,7 @@ const Seccion=()=>{
  return (
    
  <Fragment>
-<h1>Prueba</h1>
+<h1>Por que somos la mejor opcion</h1>
 <div class="grid__nosotros">
 <div class="bloque">
    <img class="bloque__imagen" src="../../img/icono_1.png" alt="Imagen nosotros"/>
